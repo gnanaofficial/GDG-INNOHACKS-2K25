@@ -78,7 +78,7 @@ import pdfCert74 from "../../assets/web-certifications/PANCHKAVACH - Nimmala Sra
 import pdfCert75 from "../../assets/web-certifications/Phoenix  - Purru Tulasi.pdf";
 import pdfCert76 from "../../assets/web-certifications/Shanthi - Earomchetty Harshitha.pdf";
 import pdfCert77 from "../../assets/web-certifications/Soft tech - BANDA VIJAY KUMAR.pdf";
-import pdfCert78 from "../../assets/web-certifications/Soft tech - Jaswanth Kumar Mamilla.pdf";
+// import pdfCert78 from "../../assets/web-certifications/Soft tech - Jaswanth Kumar Mamilla.pdf";
 import pdfCert79 from "../../assets/web-certifications/Soft tech - Kalakada Poojitha.pdf";
 import pdfCert80 from "../../assets/web-certifications/Soft tech - Y Durga Venkata Deepak.pdf";
 import pdfCert81 from "../../assets/web-certifications/Soft Tech - Yagateela Suneel.pdf";
@@ -364,13 +364,10 @@ const HackathonPage = ({ manualImages = [] }) => {
               </div>
               <div className="p-6">
                 <div className="mt-1">
-                  <h3 className="text-lg font-medium mb-4">
-                    Gallery Images
-                  </h3>
+                  <h3 className="text-lg font-medium mb-4">Gallery Images</h3>
                   {allImages.length === 0 ? (
                     <p className="text-gray-300 text-center py-8">
-                      No images uploaded yet. Share your hackathon
-                      experience!
+                      No images uploaded yet. Share your hackathon experience!
                     </p>
                   ) : (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -385,8 +382,7 @@ const HackathonPage = ({ manualImages = [] }) => {
                             className="w-full h-48 object-cover"
                           />
                           <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white p-2 text-sm truncate">
-                            {image.name ||
-                              `GDG Innohacks 2K25 - ${index + 1}`}
+                            {image.name || `GDG Innohacks 2K25 - ${index + 1}`}
                           </div>
                         </div>
                       ))}
